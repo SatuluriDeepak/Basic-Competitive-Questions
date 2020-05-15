@@ -15,7 +15,7 @@ public class OddSubarray {
 		for(long i=0;i<arr.length;i++) {
 			for(long j=i;j<arr.length;j++) {
 				for(long k=i;k<=j;k++) {
-					System.out.print(arr[(int) k]+" ");
+					//System.out.print(arr[(int) k]+" ");
 					{
 						if(arr[(int)k]%2==0) 
 							even+=1;
@@ -23,13 +23,11 @@ public class OddSubarray {
 							odd+=1;	
 					}
 					if(even==odd){
-						System.out.println();
 						c+=1;
 						even=0;
 						odd=0;
 					}	
 				}
-				System.out.println();
 			}
 		}
 		System.out.println(c);
